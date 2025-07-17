@@ -28,7 +28,6 @@ public class BankAccount {
 
     public List<Transaction> getTransactions() {
         return transactions;
-
     }
 
     public Currency getCurrency() {
