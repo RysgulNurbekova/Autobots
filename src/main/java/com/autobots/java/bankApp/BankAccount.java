@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-public class BankAccount {
+public abstract class BankAccount {
     protected String accountNumber;
     protected double balance;
     protected final Client owner;
@@ -18,7 +18,9 @@ public class BankAccount {
         this.accountNumber = UUID.randomUUID().toString();
     }
 
-    public abstract void deposit(double amount);
+    public void deposit(double amount) {
+
+    }
 
     public abstract boolean withdraw(double amount);
 
